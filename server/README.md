@@ -14,7 +14,6 @@
 #### 설치  
   
 **설치 명령어**  
-  
 	`# apt-get install mysql-server -y`  
   
 **확인**    
@@ -40,11 +39,9 @@
 #### 비밀번호 변경(필요시)  
   
 **mysql 구동 후**  
-  
 	`alter user 'root'@'localhost' identified with beyondme by 'root';`  
 
 **재실행**  
-  
 	`# service mysqld restart`    
   
 ### Server 실행  
