@@ -4,10 +4,50 @@
  - JavaScript
  - Express
  - Node.js
- - Mysql
+ - Mysql 5.7
  - Ubuntu 18.0.1  
    
 ## 2. 사용법  
+  
+### mysql 5.7 설치 및 구동
+
+#### 설치
+
+**설치 명령어**
+`# apt-get install mysql-server -y`  
+
+**확인**    
+`mysql --version`    
+  
+**구동 확인**    
+`# service mysqlId start`  
+`mysql -u root -p`    
+(default password는 `enter`키입력 이다.)  
+
+**환경설정**  
+`# service mysqlId start`
+`mysql_secure_installation`  
+
+1. 비밀번호 복잡도 검사과정(n)
+2. 비밀번호 입력 & 확인(beyondme)
+3. 익명사용자 삭제(y)
+4. 원격접속허용(n)
+5. test DB삭제(n)
+6. previlege 테이블을 다시 로드할 것인지(n)
+7. 확인할 것이 더 있는지?(n)
+  
+#### 비밀번호 변경(필요시)
+
+**mysql 구동 후**
+
+`alter user 'root'@'localhost' identified with beyondme by 'root';`
+
+**재실행**
+
+`# service mysqld restart`  
+
+### Server 실행
+
 1. 터미널 열기
 2. server가 있는 폴더로 이동
 3. `npm start` 입력
