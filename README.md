@@ -26,7 +26,8 @@
   
 - Learning : Python(Pytorch, OpenCV)  
 <br> 
-  
+
+<img src="/descript_image/language.png">  
   
 ## 4. 시스템 구성 및 아키텍처
 
@@ -49,7 +50,8 @@
 6. Learning process의 결과를 바탕으로 사진을 학습해 아는 사람들의 data(family, friends directory)에 반영한다.
 <br> 
 
-
+<img src="/descript_image/System_Structure.png">  
+<img src="/descript_image/SystemFlow.png">  
 ## 5. 프로젝트 주요기능 
 
 - 실시간 알림: 외부인의 침입에 대한 즉각적인 알림이 간다.  
