@@ -27,16 +27,16 @@
 
 ## 3. 개발 환경 및 언어
 
-- server: JavaScript, Express, Node.js, Mysql, Ubuntu 18.0.1  
+- **server**: JavaScript, Express, Node.js, Mysql, Ubuntu 18.0.1  
 <br> 
   
-- Cam : Linux python  
+- **Cam** : Linux python  
 <br> 
   
-- Client : Android Studio Java, Android 9  
+- **Client** : Android Studio Java, Android 9  
 <br> 
   
-- Learning : Python(Pytorch, OpenCV), Ubuntu 18.0.1  
+- **Learning** : Python(Pytorch, OpenCV), Ubuntu 18.0.1  
 <br> 
 
 <img src="/descript_image/language.png">  
