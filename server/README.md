@@ -13,20 +13,21 @@
 
 #### 설치  
   
-**설치 명령어**
-`# apt-get install mysql-server -y`  
+**설치 명령어**  
+  
+	`# apt-get install mysql-server -y`  
   
 **확인**    
-`mysql --version`    
+	`mysql --version`    
     
 **구동 확인**    
-`# service mysqlId start`  
-`mysql -u root -p`    
-(default password는 `enter`키입력 이다.)  
+	`# service mysqlId start`  
+	`mysql -u root -p`    
+	(default password는 `enter`키입력 이다.)  
   
 **환경설정**  
-`# service mysqlId start`  
-`mysql_secure_installation`    
+	`# service mysqlId start`  
+	`mysql_secure_installation`    
 
 1. 비밀번호 복잡도 검사과정(n)  
 2. 비밀번호 입력 & 확인(beyondme)  
@@ -40,17 +41,17 @@
   
 **mysql 구동 후**  
   
-`alter user 'root'@'localhost' identified with beyondme by 'root';`  
+	`alter user 'root'@'localhost' identified with beyondme by 'root';`  
 
 **재실행**  
   
-`# service mysqld restart`    
+	`# service mysqld restart`    
   
 ### Server 실행  
   
-1. 터미널 열기  
-2. server가 있는 폴더로 이동  
-3. `npm start` 입력  
+	1. 터미널 열기  
+	2. server가 있는 폴더로 이동  
+	3. `npm start` 입력  
     
 ## 3. 특징  
   
