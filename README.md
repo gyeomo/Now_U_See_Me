@@ -55,9 +55,8 @@
 5. 결정된 사항을 server로 Post 요청을 보내 전송한다.
 
 6. Learning process의 결과를 바탕으로 사진을 학습해 아는 사람들의 data(family, friends directory)에 반영한다.
-
-<img src="/descript_image/System_Structure.png">  
-<img src="/descript_image/SystemFlow.png">  
+ 
+<img src="/descript_image/SystemFlow.png"  width="600" height="450">  
 
 ## 5. 프로젝트 특징
 
