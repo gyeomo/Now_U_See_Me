@@ -1,6 +1,3 @@
-통합적인 README.md
-
-
 # Now_U_See_Me
 
 **1. 프로젝트 설명**  

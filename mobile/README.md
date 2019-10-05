@@ -102,3 +102,7 @@ public boolean sendResult
 ```  
   
 [SelectView](https://github.com/gyeomo/Now_U_See_Me/blob/master/mobile/app/src/main/java/com/dev/kih/nusm/ChoiceWho.java)에서 선택한 값을 서버로 보낸다.
+
+
+### Revision history
+[now_u_see_me](https://github.com/kiryun/now_u_see_me_mobile)
