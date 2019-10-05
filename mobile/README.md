@@ -1,9 +1,11 @@
 # Now_U_See_Me Mobile
 
 ### 1. 개발 환경 구축 및 설치
- - Android Studio 3.4.1  
- 
- - build.gradle   
+ - Android Studio 3.4.1    
+   
+ - Android 9  
+   
+ - build.gradle    
    
 ```java 
   
@@ -101,7 +103,7 @@ eventTime을 서버로 보내어 eventTime에 대한 image값을 받아온다.
 public boolean sendResult
 ```  
   
-[SelectView](https://github.com/gyeomo/Now_U_See_Me/blob/master/mobile/app/src/main/java/com/dev/kih/nusm/ChoiceWho.java)에서 선택한 값을 서버로 보낸다.
+`ChoiceWho.java`에서 선택한 값을 서버로 보낸다.
 
 <br>  
 <br>  

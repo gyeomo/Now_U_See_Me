@@ -34,10 +34,10 @@ exports.upload = (req, res) => {
     for(i = 0; i<img_addrs.length; i++){
         if( i == img_addrs.length - 1){
             str_types += 'fresh';
-            str_addrs += "../fresh/"+img_addrs[i];//img_addrs[i];//"../fresh/"+img_addrs[i];
+            str_addrs += "../learn/fr/"+img_addrs[i];//img_addrs[i];//"../fresh/"+img_addrs[i];
         }else{
             str_types += 'fresh,';
-            str_addrs += "../fresh/"+img_addrs[i]+',';//img_addrs[i]+',';//"../fresh/"+img_addrs[i]+',';
+            str_addrs += "../learn/fr/"+img_addrs[i]+',';//img_addrs[i]+',';//"../fresh/"+img_addrs[i]+',';
         }
     }
 
@@ -99,10 +99,10 @@ exports.unknown = (req, res) => {
     for(i = 0; i<img_addrs.length; i++){
         if( i == img_addrs.length - 1){
             str_types += types[i];
-            str_addrs += "../unknown/"+eventTime+"/"+img_addrs[i];//img_addrs[i];//"../unknown/"+eventTime+img_addrs[i];
+            str_addrs += "../learn/un/"+eventTime+"/"+img_addrs[i];//img_addrs[i];//"../unknown/"+eventTime+img_addrs[i];
         }else{
             str_types += types[i]+',';
-            str_addrs += "../unknown/"+eventTime+"/"+img_addrs[i]+',';//img_addrs[i]+',';//"../unknown/"+eventTime+img_addrs[i]+',';
+            str_addrs += "../learn/un/"+eventTime+"/"+img_addrs[i]+',';//img_addrs[i]+',';//"../unknown/"+eventTime+img_addrs[i]+',';
         }
     }
     console.log(str_types);
@@ -208,7 +208,7 @@ exports.images = (req, res) => {
         var response = {};
         var results = [];
         for(var i = 0; i<list_addrs.length; i++){
-            var replace_str = '../unknown/'+req.params.eventTime+'/';
+            var replace_str = '../learn/un/'+req.params.eventTime+'/';
             var name = list_addrs[i].replace(replace_str, "");
             var url = '/image/unknown/'+req.params.eventTime;
             
@@ -260,10 +260,10 @@ exports.update = (req, res) => {
     }
 
     // 3. 분류된 사진을 폴더에 재배치 해준다.
-    var path = '../unknown/'+eventTime+"/";
+    var path = '../learn/un/'+eventTime+"/";
     for(i=0; i<imageName.length; i++){
         if(types[i] == 'Family'){ // family
-            let new_path = '../family/'+eventTime+imageName[i];
+            let new_path = '../learn/fa/'+eventTime+imageName[i];
             fs.rename(path+imageName[i], new_path, function(err){
                 if(err){
                     console.log("Family 이동 실패");
@@ -275,7 +275,7 @@ exports.update = (req, res) => {
                 }
             })
         }else if(types[i] == 'Friends'){ // friends
-            let new_path = '../friends/'+eventTime+imageName[i];
+            let new_path = '../learn/fd/'+eventTime+imageName[i];
             fs.rename(path+imageName[i], new_path, function(err){
                 if(err){
                     console.log("Friends 이동 실패");
@@ -287,7 +287,7 @@ exports.update = (req, res) => {
         }
     }
 
-    rimraf.sync("../unknown/"+eventTime);
+    rimraf.sync("../learn/un/"+eventTime);
     // 4. row 삭제
     models.Event.destroy(
         {
