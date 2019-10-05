@@ -1,18 +1,18 @@
 # Now_U_See_Me Server
 
-### 1. 개발 환경 구축 및 설치
+## 1. 개발 환경 구축 및 설치
  - JavaScript
  - Express
  - Node.js
  - Mysql
  - Ubuntu 18.0.1  
    
-### 2. 사용법  
+## 2. 사용법  
 1. 터미널 열기
 2. server가 있는 폴더로 이동
 3. `npm start` 입력
   
-### 3. 특징  
+## 3. 특징  
   
 - REST API Server 구축
     - SW 구조
@@ -77,6 +77,6 @@
     
 	
        
-### Revision history    
+## Revision history    
   
 [now_u_see_me_server](https://github.com/kiryun/now_u_see_me_server)
