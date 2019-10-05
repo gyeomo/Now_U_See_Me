@@ -21,7 +21,7 @@
 - Cam : Linux python  
 <br> 
   
-- Client : Android Studio Java  
+- Client : Android Studio Java, Android 9  
 <br> 
   
 - Learning : Python(Pytorch, OpenCV), Ubuntu 18.0.1  

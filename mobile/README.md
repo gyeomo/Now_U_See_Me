@@ -1,9 +1,11 @@
 # Now_U_See_Me Mobile
 
 ### 1. 개발 환경 구축 및 설치
- - Android Studio 3.4.1  
- 
- - build.gradle   
+ - Android Studio 3.4.1    
+   
+ - Android 9  
+   
+ - build.gradle    
    
 ```java 
   
