@@ -1,6 +1,6 @@
 # Now_U_See_Me Mobile
 
-### 1. 개발 환경 구축 및 설치
+## 1. 개발 환경 구축 및 설치
  - Android Studio 3.4.1    
    
  - Android 9  
@@ -25,12 +25,12 @@ dependencies {
 
 ```
 
-### 2. 사용법  
+## 2. 사용법  
 
   
-### 3. 특징  
+## 3. 특징  
   
-##### [MainActivity](https://github.com/gyeomo/Now_U_See_Me/blob/master/mobile/app/src/main/java/com/dev/kih/nusm/MainActivity.java)  
+### [MainActivity](https://github.com/gyeomo/Now_U_See_Me/blob/master/mobile/app/src/main/java/com/dev/kih/nusm/MainActivity.java)  
   
 ```java 
 handler = new Handler() 
@@ -46,7 +46,7 @@ FCM으로부터 받은 Token을 서버로 전송한다.
 <br>
 <br>  
 
-##### [SelectView](https://github.com/gyeomo/Now_U_See_Me/blob/master/mobile/app/src/main/java/com/dev/kih/nusm/ChoiceWho.java)  
+### [SelectView](https://github.com/gyeomo/Now_U_See_Me/blob/master/mobile/app/src/main/java/com/dev/kih/nusm/ChoiceWho.java)  
 
 서버로부터 전송받은 EventTime에 대한 이미지를 불러오고 각 인물에 대한 타입을 선정하여 서버에 결과를 전송하는 Activity이다.
 <br>
@@ -59,7 +59,7 @@ RadioGroup에는 RadioButton 3개씩 들어간다
 <br>
 <br>
   
-##### [Singleton](https://github.com/gyeomo/Now_U_See_Me/blob/master/mobile/app/src/main/java/com/dev/kih/nusm/Singleton.java)  
+### [Singleton](https://github.com/gyeomo/Now_U_See_Me/blob/master/mobile/app/src/main/java/com/dev/kih/nusm/Singleton.java)  
   
 서비스루틴과 Activity에서 데이터를 효율적으로 사용하기 위해 Singleton 디자인 패턴을 사용하였다.   
 
@@ -73,14 +73,14 @@ singleton에 저장하는 변수 혹은 객체로는
 이 있다.
 <br>
 <br>
-##### [FCM](https://github.com/gyeomo/Now_U_See_Me/blob/master/mobile/app/src/main/java/com/dev/kih/nusm/MyFireBaseMessagingService.java)  
+### [FCM](https://github.com/gyeomo/Now_U_See_Me/blob/master/mobile/app/src/main/java/com/dev/kih/nusm/MyFireBaseMessagingService.java)  
 
 Notification을 받기 위해 
 APP <-> FCM <-> Server 형식으로 구성하였다.  
 FCM에 대한 결과를 받기 위한 부분이다. 
   <br>
   <br>
-##### [Server Communication](https://github.com/gyeomo/Now_U_See_Me/blob/master/mobile/app/src/main/java/com/dev/kih/nusm/ApiClient.java)  
+### [Server Communication](https://github.com/gyeomo/Now_U_See_Me/blob/master/mobile/app/src/main/java/com/dev/kih/nusm/ApiClient.java)  
   
 서버와 통신하는 모듈이다.  
    
@@ -108,5 +108,5 @@ public boolean sendResult
 <br>  
 <br>  
   
-### Revision history
+## Revision history
 [now_u_see_me_mobile](https://github.com/kiryun/now_u_see_me_mobile)
