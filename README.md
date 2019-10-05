@@ -56,7 +56,7 @@
 
 6. Learning process의 결과를 바탕으로 사진을 학습해 아는 사람들의 data(family, friends directory)에 반영한다.
  
-<img src="/descript_image/SystemFlow.png"  width="550" height="450">  
+<img src="/descript_image/SystemFlow.png"  width="400" height="600">  
 
 ## 5. 프로젝트 특징
 
