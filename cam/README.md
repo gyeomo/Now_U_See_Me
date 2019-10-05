@@ -20,6 +20,8 @@
 - 보내진 사진은 삭제한다.
 
 <br>  
-<br>    
-### Revision history
+<br>   
+   
+### Revision history  
+  
 [now_u_see_me_cam](https://github.com/kiryun/now_u_see_me_cam)

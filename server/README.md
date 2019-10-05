@@ -75,3 +75,8 @@
         어플리케이션의 알림기능을 구현하기 위해선 현재 서버에서 클라이언트로 알림을 전달할 방법이 있어야 한다. 
         그러나 본연의 서버의 기능을 수행하면서 또 하나의 복잡한 알림기능까지 포함하면 서버에 과부하가 걸린다고 판단하여 Google에서 무료로 제공하는 Firebase Cloud Messaging을 이용하였다.
     
+	
+       
+### Revision history    
+  
+[now_u_see_me_server](https://github.com/kiryun/now_u_see_me_server)
