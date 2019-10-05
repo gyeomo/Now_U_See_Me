@@ -2,9 +2,9 @@
 
 #### 1. 프로젝트 설명  
 #### 2. 사용법
-#### 3. 개발 환경 구축 및 설치  
+#### 3. 개발 환경 및 언어 
 #### 4. 시스템 구성 및 아키텍처 
-#### 5. 프로젝트 주요기능  
+#### 5. 프로젝트 특징
 #### 6. 기대효과 및 활용분야  
   
 ## 1. 프로젝트 설명
@@ -13,7 +13,19 @@
 
 ## 2. 사용법
 
-## 3. 개발환경 및 개발언어
+- [server](https://github.com/gyeomo/Now_U_See_Me/tree/master/server)
+<br> 
+  
+- [Cam](https://github.com/gyeomo/Now_U_See_Me/tree/master/cam)
+<br> 
+  
+- [Client](https://github.com/gyeomo/Now_U_See_Me/tree/master/mobile)
+<br> 
+  
+- [Learning](https://github.com/gyeomo/Now_U_See_Me/tree/master/learn)
+<br> 
+
+## 3. 개발 환경 및 언어
 
 - server: JavaScript, Express, Node.js, Mysql, Ubuntu 18.0.1  
 <br> 
@@ -32,40 +44,31 @@
 ## 4. 시스템 구성 및 아키텍처
 
 1. 라즈베리파이에 설치한 웹캠을 이용하여 얻은 사진을 server에 Post 요청을 보내 전송한다. 
-<br> 
 
 2. 서버에서 얼굴이 포함된 frame들을 learning process에 넣는다.
-<br> 
 
 3. 아는 사람들(학습된 identities)의 사진은 삭제한다.
     -  모르는 사람들(학습되지 않은 identities)은 1 한 사람당 중복되는 사진은 지우고 남겨진 하나의 사진을 2 Mysql로 만들어진 database에 저장과 동시에 3 client에게 FCM을 이용하여 notification을 보낸다.
-    <br> 
     
 4. Client(Android app)에서 notification받은 사진을 보고 아는 사람들의 data에 저장 할지를 결정한다.
-<br> 
 
 5. 결정된 사항을 server로 Post 요청을 보내 전송한다.
-<br> 
 
 6. Learning process의 결과를 바탕으로 사진을 학습해 아는 사람들의 data(family, friends directory)에 반영한다.
-<br> 
 
 <img src="/descript_image/System_Structure.png">  
 <img src="/descript_image/SystemFlow.png">  
-## 5. 프로젝트 주요기능 
 
-- 실시간 알림: 외부인의 침입에 대한 즉각적인 알림이 간다.  
-<br> 
-  
-- 실시간 학습 반영: 클라이언트의 결과에 따라 실시간 학습과 반영을 한다.  
-  <br>
-    
-- 적은 데이터 학습: 최소 한 장의 사진으로도 얼굴 식별이 가능하다.  
-  <br>
-  
-- 제약이 적은 CCTV 설치: 단순한 웹캠으로 사진을 전송하므로 출입문, 집안 내부 등에 쉽게 설치할 수 있다.  
-  
-  <br>
+## 5. 프로젝트 특징
+
+- **실시간 알림 ** 외부인의 침입에 대한 즉각적인 알림이 간다.  
+
+- **실시간 학습 반영** 클라이언트의 결과에 따라 실시간 학습과 반영을 한다.  
+
+- **적은 데이터 학습** 최소 한 장의 사진으로도 얼굴 식별이 가능하다.  
+
+- **제약이 적은 CCTV 설치** 단순한 웹캠으로 사진을 전송하므로 출입문, 집안 내부 등에 쉽게 설치할 수 있다.  
+
 
 ## 6. 기대효과 및 활용분야
 
