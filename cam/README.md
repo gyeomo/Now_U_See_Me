@@ -19,7 +19,8 @@
 - 사진 이름은 현재 시간을 년-월-일-시-분-초-밀리초로 변환하여 저장한다.
 - 보내진 사진은 삭제한다.
 
-<br>
-<br>    
+<br>  
+<br>  
+  
 ### Revision history
 [now_u_see_me_cam](https://github.com/kiryun/now_u_see_me_cam)
