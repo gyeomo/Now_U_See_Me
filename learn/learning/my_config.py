@@ -5,13 +5,13 @@ from torchvision import transforms
 # sets device for model and PyTorch tensors
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-frdir = "../fresh/"
-undir = "../unknown/"
-uprdir= "../unpro/"
-famdir= "../family/"
-fridir= "../friends/"
-kndir = "../known/"
-knpkl = "../known/knval.pkl"
+frdir = "../fr/"
+undir = "../un/"
+uprdir= "../pro/"
+famdir= "../fa/"
+fridir= "../fd/"
+kndir = "../kn/"
+knpkl = "../kn/knval.pkl"
 
 transformer=transforms.Compose([
         transforms.ToTensor(),

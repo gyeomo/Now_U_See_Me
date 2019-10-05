@@ -23,7 +23,7 @@ data_transforms = {
     ]),
 }
 
-
+#Convert to and label images to apply to learning
 class ArcFaceDataset(Dataset):
     def __init__(self, split):
         with open(pickle_file, 'rb') as file:

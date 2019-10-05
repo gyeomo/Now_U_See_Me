@@ -1,8 +1,8 @@
 import os
+
 import torch
 
-# sets device for model and PyTorch tensors
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')  # sets device for model and PyTorch tensors
 
 # Model parameters
 image_w = 112
@@ -15,10 +15,11 @@ grad_clip = 5.  # clip gradients at an absolute value of
 print_freq = 100  # print training/validation stats  every __ batches
 checkpoint = None  # path to checkpoint, None if none
 
-# Data parameters
-num_classes = 28812
-num_samples = 100000
+#Images files data parameters
+num_classes = 93979
+num_samples = 2830146
 
+#Image data files
 DATA_DIR = 'data'
 faces_glintasia = 'data/faces_glintasia'
 path_imgidx = os.path.join(faces_glintasia, 'train.idx')

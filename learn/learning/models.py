@@ -1,5 +1,4 @@
 import math
-
 import torch
 import torch.nn.functional as F
 import torch.utils.model_zoo as model_zoo
@@ -9,6 +8,10 @@ from torchsummary import summary
 
 from config import device, num_classes
 
+"""""""""""""""""""""
+Types of running models
+
+"""""""""""""""""""""
 __all__ = ['ResNet', 'resnet18', 'resnet34', 'resnet50', 'resnet101',
            'resnet152']
 

@@ -24,7 +24,7 @@ seq = iaa.Sequential(
     [
         iaa.Fliplr(0.5),  # horizontally flip 50% of all images
         iaa.Sometimes(0.2,
-                      iaa.Grayscale(alpha=1.0) #0.2확률로 흑백 변환 
+                      iaa.Grayscale(alpha=1.0) #Convert the gray to 0.2 Probability
                       )
     ]
 )
@@ -36,8 +36,8 @@ def image_aug(src):
     aug = augs[0]
     return aug
 
-
-if __name__ == "__main__": #이미지 test용 코드 
+#Image Conversion Test Code
+if __name__ == "__main__":
     with open(pickle_file, 'rb') as file:
         data = pickle.load(file)
 

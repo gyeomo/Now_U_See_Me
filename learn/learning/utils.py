@@ -23,7 +23,7 @@ def clip_gradient(optimizer, grad_clip):
             if param.grad is not None:
                 param.grad.data.clamp_(-grad_clip, grad_clip)
 
-
+#Save the best learning model &parameter
 def save_checkpoint(epoch, epochs_since_improvement, model, metric_fc, optimizer, acc, is_best):
     state = {'epoch': epoch,
              'epochs_since_improvement': epochs_since_improvement,
@@ -38,7 +38,7 @@ def save_checkpoint(epoch, epochs_since_improvement, model, metric_fc, optimizer
     if is_best:
         torch.save(state, 'BEST_checkpoint.tar')#가장 좋은부분 저장 
 
-
+#init learning variable
 class AverageMeter(object):
     """
     Keeps track of most recent, average, sum, and count of a metric.
@@ -59,19 +59,19 @@ class AverageMeter(object):
         self.count += n
         self.avg = self.sum / self.count
 
-
+#learning late scheduler
 def adjust_learning_rate(optimizer, shrink_factor):
     """
     Shrinks learning rate by a specified factor.
-    :param optimizer: optimizer whose learning rate must be shrunk.학습속도 줄여야할 시기
-    :param shrink_factor: factor in interval (0, 1) to multiply learning rate with.합습속도에 곱하기 위한 간격인자 
+    :param optimizer: optimizer whose learning rate must be shrunk. 학습속도 줄여야할 시기
+    :param shrink_factor: factor in interval (0, 1) to multiply learning rate with. 합습속도에 곱하기 위한 간격인자 
     """
     print("\nDECAYING learning rate.")
     for param_group in optimizer.param_groups:
         param_group['lr'] = param_group['lr'] * shrink_factor
     print("The new learning rate is %f\n" % (optimizer.param_groups[0]['lr'],))
 
-
+# learning acuuracy
 def accuracy(scores, targets, k=1):
     batch_size = targets.size(0)
     _, ind = scores.topk(k, 1, True, True)
@@ -79,7 +79,7 @@ def accuracy(scores, targets, k=1):
     correct_total = correct.view(-1).float().sum()  # 0D tensor
     return correct_total.item() * (100.0 / batch_size)
 
-
+# face alignment
 def align_face(img_fn, facial5points):
     raw = cv.imread(img_fn, True)   # BGR
     facial5points = np.reshape(facial5points, (2, 5))
@@ -115,7 +115,7 @@ def get_face_attributes(full_path):
         pass
     return False, None
 
-
+#Find center face 
 def select_central_face(im_size, bounding_boxes):
     width, height = im_size
     nearest_index = -1
@@ -132,7 +132,7 @@ def select_central_face(im_size, bounding_boxes):
 
     return nearest_index
 
-
+#only center face detector
 def get_central_face_attributes(full_path):
     try:
         img = Image.open(full_path).convert('RGB')
@@ -148,7 +148,7 @@ def get_central_face_attributes(full_path):
         pass
     return False, None, None
 
-
+#faces detector
 def get_all_face_attributes(full_path):
     try:
         img = Image.open(full_path).convert('RGB')
@@ -161,7 +161,7 @@ def get_all_face_attributes(full_path):
         pass
     return False, None, None
 
-
+#Display face landmarks
 def draw_bboxes(img, bounding_boxes, facial_landmarks=[]):
     for b in bounding_boxes:
         cv.rectangle(img, (int(b[0]), int(b[1])), (int(b[2]), int(b[3])), (255, 255, 255), 1)
@@ -174,7 +174,7 @@ def draw_bboxes(img, bounding_boxes, facial_landmarks=[]):
 
     return img
 
-
+#parameter settings
 def parse_args():
     parser = argparse.ArgumentParser(description='Train face network')
     # general
@@ -199,20 +199,17 @@ def parse_args():
     args = parser.parse_args()
     return args
 
-
-def get_logger(): #학습할때 앞에 시간이랑 나오는부분이 이부분 
-    logger = logging.getLogger() #로거 생성
-    handler = logging.StreamHandler() # handler:내가 로깅한 정보가 출력되는 위치 설정
-#stream 은 콘솔 File은 파일 등등 설정할 수 있음
+#log store
+def get_logger(): 
+    logger = logging.getLogger()
+    handler = logging.StreamHandler()
     formatter = logging.Formatter("%(asctime)s %(levelname)s \t%(message)s")
-#formatting :이 메세지가 언제 쓰여졌는지, 어떤 모듈에서 쓰여졌는지 등 기타 정보를 같이 출력하고 싶을 때 씀
     handler.setFormatter(formatter)
     logger.addHandler(handler)
-    logger.setLevel(logging.DEBUG) #debug 이상 다 출력
-# DEBUG < INFO < WARNING < ERROR < CRITICAL  
+    logger.setLevel(logging.DEBUG) 
     return logger
 
-
+#make dir
 def ensure_folder(folder):
     import os
     if not os.path.isdir(folder):
