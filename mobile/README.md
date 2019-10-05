@@ -103,7 +103,7 @@ eventTime을 서버로 보내어 eventTime에 대한 image값을 받아온다.
 public boolean sendResult
 ```  
   
-[SelectView](https://github.com/gyeomo/Now_U_See_Me/blob/master/mobile/app/src/main/java/com/dev/kih/nusm/ChoiceWho.java)에서 선택한 값을 서버로 보낸다.
+`ChoiceWho.java`에서 선택한 값을 서버로 보낸다.
 
 <br>  
 <br>  
