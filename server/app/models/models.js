@@ -21,6 +21,13 @@ const Event = sequelize.define('event', {
     //types- 0: fresh, 1: unknown, 2: family, 3: friends
     types: Sequelize.STRING,
     img_addrs: Sequelize.STRING
+    // {
+    //     type: Sequelize.STRING,
+    //     validate: {
+    //         len: [0, 1500]
+    //     }
+    // }
+
 });
 
 

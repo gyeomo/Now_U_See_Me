@@ -6,7 +6,7 @@ exports.unknown = (req, res) => {
     
     let filename = req.params.filename;
     let eventTime = req.params.eventTime;
-    var path = '../unknown/'+eventTime+'/'+filename;
+    var path = '../learn/un/'+eventTime+'/'+filename;
 
     var fileStream = fs.createReadStream(path);
 

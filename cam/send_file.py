@@ -15,6 +15,9 @@ cap = cv2.VideoCapture(0)
 idx = 0
 flag = 0
 preTime = time.time()
+filename_list = os.listdir(path_dir)
+for each in filename_list:
+	os.remove(path_dir+each)
 while True:
 	curTime = time.time()
 	ret, frame = cap.read()
