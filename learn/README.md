@@ -10,15 +10,15 @@
 
 #### 5. 라이선스
 
-
+<br/>
 
 ## 1. 시스템 소개
 
-- **사용 기법 설명**
+**사용 기법 설명**
 
-  이 시스템에 사용된 딥러닝 모델은 LFW dataset에서 98.716%테스트 결과를 얻었으며, 얼굴 영역의 feature를 추출하여 기존 data들의과 같은 사람인지를 1:1 방식으로 비교합니다. 데이터가 많이 필요한 기존의 딥러닝 방식과는 다른 1장의 사진으로도 높은 정확도를 가지는 One-shot metric learning 기법을 사용하였습니다.
+이 시스템에 사용된 딥러닝 모델은 LFW dataset에서 98.716%테스트 결과를 얻었으며, 얼굴 영역의 feature를 추출하여 기존 data들의과 같은 사람인지를 1:1 방식으로 비교합니다. 데이터가 많이 필요한 기존의 딥러닝 방식과는 다른 1장의 사진으로도 높은 정확도를 가지는 One-shot metric learning 기법을 사용하였습니다.
 
-- **시스템 설명**
+**시스템 설명**
 
 Learning process는 두 가지 일을 처리합니다.
 
@@ -28,11 +28,11 @@ Learning process는 두 가지 일을 처리합니다.
 
 -client에게 얻은 외부인 결과를 통해 기존의 Data(family or friends)들에 포함 할 수 있도록 처리합니다.
 
-<video src="./readme_image/real_time_face_cam.mp4"></video>
+[![Watch the video](https://www.youtube.com/watch?v=Q-vJoNmon1c&feature=youtu.be)
 
 **모델 성능용 demo 영상입니다.**
 
-
+<br/>
 
 ## 2. 사용법
 
