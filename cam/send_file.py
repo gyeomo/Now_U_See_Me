@@ -26,9 +26,7 @@ while True:
 		print 'take'
 		
 		now = datetime.now()
-		current_time = str(now.year)+"-"+\
-				str(now.month)+"-"+str(now.day)+"-"+\
-				str(now.hour)+"-"+str(now.minute)+"-"+\
+		current_time = 	str(now.hour)+"-"+str(now.minute)+"-"+\
 				str(now.second)+"-"+str(now.microsecond)
 		cv2.imwrite('./images/'+current_time+'.jpg',frame)
 		idx += 1
