@@ -10,7 +10,7 @@
 
 #### 5. 라이선스
 
-
+<br/>
 
 ## 1. 소개
 
@@ -18,7 +18,7 @@
 
 사용된 코드는 1. [PyTorch version](https://github.com/foamliu/InsightFace-v2)에서 다운 받을 수도 있고 2. 제가 올려둔 주석을 포함한 코드를 사용하셔도 됩니다. 
 
-
+<br/>
 
 ## 2. 개발환경 구축
 
@@ -35,7 +35,7 @@
 
 그 외 추가적인 것들은 `pip install [~]`
 
-
+<br/>
 
 ## 3. 사용법
 
@@ -103,7 +103,7 @@ $ wget http://vis-www.cs.umass.edu/lfw/people.txt
 $ python train.py
 ```
 
-
+<br/>
 
 ## 4. 실행 결과
 
@@ -113,8 +113,8 @@ $ python train.py
 - 5749 identities 
 - 1680 identities with >=2 photo		
 
-![accuaracy](/home/lmrider/Documents/test/Now_U_See_Me/learn/readme_image/accuaracy.png)								
-![Figure_1](/home/lmrider/Documents/test/Now_U_See_Me/learn/readme_image/Figure_1.png)
+![accuaracy](../readme_image/accuaracy.png)								
+![Figure_1](../readme_image/Figure_1.png)
 
 #### 추가적인 정보
 
@@ -142,8 +142,7 @@ RAM 16G
  이 외는 그대로 두었습니다.
 
 ```
-
-- **InsightFace-v2-master/files 기능들**
+<br/>
 
 ## 5. 라이선스![apm](https://img.shields.io/apm/l/vim-mode.svg)
 
