@@ -57,6 +57,8 @@ Now_U_See_Me는 CCTV를 이용한 외부인 감지 시스템으로 실시간으�
 
 **Client 실행**
 
+[Client](https://github.com/gyeomo/Now_U_See_Me/tree/master/mobile)
+
 **Cam 실행**
 
 ```bash
