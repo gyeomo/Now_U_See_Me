@@ -32,10 +32,10 @@ dependencies {
 3. 외부인이 감지되면 FCM으로부터 Notification을 받는다.
 4. 알림을 확인하면 어플에서 ListView를 통해 EventTime을 확인할 수 있다.  
    
-   <img src="./images/image1.jpg">
+   <img src="./images/image1.jpg" width="350" height="550">
   
 5. EventTime을 누르면 그에 해당하는 사진을 확인할 수 있다.
-	<img src="./images/image2.jpg">
+	<img src="./images/image2.jpg" width="350" height="550">
 6. 사진을 보고 Unknown, Family, Friends인지를 RadioButton을 통해 선택한다.
 7. 선택이 완료되면 determine 버튼을 눌러서 결과를 서버로 전송한다.
 
