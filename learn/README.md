@@ -2,7 +2,7 @@
 
 #### 1. 시스템 소개
 
-#### 2. 
+#### 2. 사용법
 
 <br/>
 
@@ -11,12 +11,13 @@
 **사용 기법 설명**
 
 이 시스템에 사용된 딥러닝 모델은 LFW dataset에서 98.716%테스트 결과를 얻었으며, 얼굴 영역의 feature를 추출하여 기존 data들의과 같은 사람인지를 1:1 방식으로 비교합니다. 데이터가 많이 필요한 기존의 딥러닝 방식과는 다른 1장의 사진으로도 높은 정확도를 가지는 One-shot metric learning 기법을 사용하였습니다.
-<br>
+
+<br/>
 **시스템 설명**
 
 Learning process는 두 가지 일을 처리합니다.
 
--server에서 받아오는 웹캠 frame에서 얼굴 영역을 crop 하고 기존 data들과 비교합니다.
+-server에서 받아오는 웹캠 frame에서 얼굴 영역을 crop 하고 기존 data들과 비교합니다.<br>
  비교한 결과가 외부인일 경우, client에게 알림을 줄 수 있도록 서버로 전송합니다.
 
 -client에게 얻은 외부인 결과를 통해 기존의 Data(family or friends)들에 포함 할 수 있도록 처리합니다.
@@ -47,7 +48,6 @@ learn/training_model/InsightFace-v2/data/thereshold.txt
 2-4. **디렉토리 생성** 시스템에 필요한 디렉토리들을 생성합니다.
 
 ![dire](./readme_image/dire.png)
-
 ```bash
 fr: fresh dir로 server에서 데이터를 저장합니다.
 pro: fresh dir에서 faces가 검출 되면 저장합니다.
