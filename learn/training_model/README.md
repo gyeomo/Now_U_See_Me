@@ -113,7 +113,7 @@ $ python train.py
   
 ![1570305003072](/readme_image/accuaracy.png)  
   
-<img src="/readme_image/accuaracy.png">  
+<img src="./readme_image/accuaracy.png">  
   
 <img src="/readme_image/Figure_1.png">  
   
