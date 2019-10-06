@@ -16,7 +16,7 @@
 
 ## 1. 프로젝트 설명
 
-[![demo](./descript_image/language.png)](https://www.youtube.com/watch?v=PKa12XJIs78&feature=youtu.be)
+[![demo](./descript_image/demo.png)](https://www.youtube.com/watch?v=PKa12XJIs78&feature=youtu.be)
 Now_U_See_Me는 CCTV를 이용한 외부인 감지 시스템으로 실시간으로 Rasberry Pi에 설치한 webcam으로부터 얻은 사진을 server로 전송하여 아는 얼굴인지 판별하여 모르는 사람일 경우 Client인 App에 알림을 주는 서비스입니다.  Client가 알림을 통해 받은 사진을 보고 모르는 사람인지 아는 사람인지 결정하여 시스템에 반영할 수 있습니다. 모르는 사람일 경우 112에 신고하세요. 남겨진 사진이 증거가 됩니다.
 
 <br/>
