@@ -1,4 +1,4 @@
-# Now_U_See_Me Learning process
+# Train the model
 
 #### 1. 소개
 
@@ -14,7 +14,9 @@
 
 ## 1. 소개
 
-이 시스템은 Face image의 
+시스템에 사용하기 위한 Face recognition 모델 학습은 [ArcFace](https://paperswithcode.com/paper/arcface-additive-angular-margin-loss-for-deep#code) 를 참고하였습니다. 
+
+사용된 코드는 1. [PyTorch version](https://github.com/foamliu/InsightFace-v2)에서 다운 받을 수도 있고 2. 제가 올려둔 주석을 포함한 코드를 사용하셔도 됩니다. 
 
 
 
@@ -109,12 +111,11 @@ $ python train.py
 
 - 13233 faces
 - 5749 identities 
-- 1680 identities with >=2 photo														
-  
-![1570305003072](./readme_image/accuaracy.png)  
-  
-![Figure_1](./readme_image/Figure_1.png)  
-  
+- 1680 identities with >=2 photo		
+
+![accuaracy](/home/lmrider/Documents/test/Now_U_See_Me/learn/readme_image/accuaracy.png)								
+![Figure_1](/home/lmrider/Documents/test/Now_U_See_Me/learn/readme_image/Figure_1.png)
+
 #### 추가적인 정보
 
 - **나의 컴퓨터 사양**
