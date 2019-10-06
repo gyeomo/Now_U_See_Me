@@ -12,12 +12,13 @@
 
 #### 6. 기대효과 및 활용분야  
 
-
+<br/>
 
 ## 1. 프로젝트 설명
 
 Now_U_See_Me는 CCTV를 이용한 외부인 감지 시스템으로 실시간으로 Rasberry Pi에 설치한 webcam으로부터 얻은 사진을 server로 전송하여 아는 얼굴인지 판별하여 모르는 사람일 경우 Client인 App에 알림을 주는 서비스입니다.  Client가 알림을 통해 받은 사진을 보고 모르는 사람인지 아는 사람인지 결정하여 시스템에 반영할 수 있습니다. 모르는 사람일 경우 112에 신고하세요. 남겨진 사진이 증거가 됩니다.
-<br>
+
+<br/>
 
 ## 2. 사용법
 
@@ -62,7 +63,7 @@ Now_U_See_Me는 CCTV를 이용한 외부인 감지 시스템으로 실시간으�
 2. send_file.py의 url 부분에 서버 ip 주소와 Directory 이름 수정
 3. $ python send_file.py
 ```
-<br>
+<br/>
 
 ## 3. 개발 환경 및 언어
 
@@ -72,7 +73,8 @@ Now_U_See_Me는 CCTV를 이용한 외부인 감지 시스템으로 실시간으�
 - **Learning** : Python(Pytorch, OpenCV), Ubuntu 18.0.1  
 - **Client** : Android Studio Java, Android 9  
 - **Cam** : Linux python
-  <br>
+
+<br/>
 
 ## 4. 시스템 구성 및 아키텍처
 
@@ -87,7 +89,8 @@ Now_U_See_Me는 CCTV를 이용한 외부인 감지 시스템으로 실시간으�
 4. Client(Android app)에서 notification받은 사진을 보고 아는 사람들의 data에 저장 할지를 결정한다.
 5. 결정된 사항을 server로 Post 요청을 보내 전송한다.
 6. Learning process의 결과를 바탕으로 사진을 학습해 아는 사람들의 data(family, friends directory)에 반영한다.
- <br>
+
+<br/>
 
 ## 5. 프로젝트 특징
 
@@ -95,7 +98,8 @@ Now_U_See_Me는 CCTV를 이용한 외부인 감지 시스템으로 실시간으�
 - **실시간 학습 반영** 클라이언트의 결과에 따라 실시간 학습과 반영을 한다.  
 - **적은 데이터 학습** 최소 한 장의 사진으로도 얼굴 식별이 가능하다.  
 - **제약이 적은 CCTV 설치** 단순한 웹캠으로 사진을 전송하므로 출입문, 집안 내부 등에 쉽게 설치할 수 있다.  
- <br>
+
+<br/>
  
 ## 6. 기대효과 및 활용분야
   
