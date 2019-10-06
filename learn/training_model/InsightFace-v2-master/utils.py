@@ -178,7 +178,7 @@ def draw_bboxes(img, bounding_boxes, facial_landmarks=[]):
 def parse_args():
     parser = argparse.ArgumentParser(description='Train face network')
     # general
-    parser.add_argument('--pretrained', type=bool, default=True, help='pretrained model')
+    parser.add_argument('--pretrained', type=bool, default=False, help='pretrained model')
     parser.add_argument('--network', default='r50', help='specify network')
     parser.add_argument('--end-epoch', type=int, default=20, help='training epoch size.')
     parser.add_argument('--lr', type=float, default=0.001, help='start learning rate')

@@ -35,10 +35,7 @@ if __name__ == "__main__":
    
     with open(pickle_file, 'wb') as file:
         pickle.dump(samples, file)
-    with open(pickle_file, 'rb') as file:
-        data=pickle.load(file)
-        print(data)    
-
-    print('num_samples: ' + str(len(samples)))
+  
+    print('num_samples: ' + str(len(samples))+samples[-1]['label'])
 
 
