@@ -16,7 +16,7 @@
 ### [send_file.py](https://github.com/gyeomo/Now_U_See_Me/blob/master/cam/send_file.py)  
 
 - 0.4초마다 사진을 찍어서 6장을 모으면 서버로 전송한다.  
-- 사진 이름은 현재 시간을 년-월-일-시-분-초-밀리초로 변환하여 저장한다.
+- 사진 이름은 현재 시간을 시-분-초-밀리초로 변환하여 저장한다.
 - 보내진 사진은 삭제한다.
 
 <br>  
