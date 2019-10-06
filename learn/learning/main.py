@@ -24,7 +24,6 @@ if __name__ == "__main__":
                 eventdir=frlist[0].split('.')[0]
                 middir=make_dir(uprdir,eventdir) #path is [uprdir/eventdir]
                 undata=compare(model,th,frlist,frdir,middir,kndatas,1) #compare the new images with the known data 
-                #undata=evaluate(model,frlist,th,imgdir)#path is the fullpath
                 remove_file(frdir,frlist) #delete the fresh imgs
                 try: #if empty the middir
                     os.rmdir(middir)
@@ -52,14 +51,14 @@ if __name__ == "__main__":
             famlist=sorted(os.listdir(famdir))
             frilist=sorted(os.listdir(fridir))
             if famlist:
+                print('family 학습!')
                 dume=compare(model,th,famlist,famdir,kndir,kndatas,0)
-                #add_pickle(model,famdir,famlist,th)
-                time.sleep(0.5)
+                time.sleep(0.2)
             elif frilist:
+                print('friends 학습!')
                 dume=compare(model,th,frilist,fridir,kndir,kndatas,0)
-                #add_pickle(model,fridir,frilist,th)
-                time.sleep(0.5)
-            time.sleep(1) 
+                time.sleep(0.2)
+            time.sleep(0.5) 
                             
     except KeyboardInterrupt:
         pass

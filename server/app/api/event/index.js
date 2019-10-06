@@ -12,7 +12,7 @@ const uploader = require('./event.uploader');
 //1. event에 대한 image 들을 받는다.
 //2. storage에 data 저장 
 //3. db에 path, type = fresh(0), eventname(time) 저장 
-router.post('/upload', uploader.uploader.array('file', 3), controller.upload);
+router.post('/upload', uploader.uploader.array('file', 5), controller.upload);
 
 //만약 받은 내용이 unknown이라면(learning 에서 unknown이라면)
 //1. {eventTime}, {path}, type = unknown 을 받는다.

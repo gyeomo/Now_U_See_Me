@@ -60,11 +60,11 @@ def compare(model,th,newimgs,srcdir,dstdir,kndatas,crop):
     for newimg in newimgs: #.jpg imgs
         newpath=srcdir+newimg #img fullpath
         is_valid, bounding_boxes, landmarks =get_all_face_attributes(newpath)#face detector
-        if is_valid: #if exist face
+        if is_valid: #If a face exists in a new image, compare it to the existing data
             with torch.no_grad():
                 for i,box in enumerate(bounding_boxes): #bounding_boxes is the coordinates of faces
-                    if crop:
-                        new=get_image(newpath,landmarks[i],transformer) # alignment face
+                    if crop:# alignment face
+                        new=get_image(newpath,landmarks[i],transformer) 
                     else:
                         new=get_image(newpath,landmarks[0],transformer)
                     imgs = torch.zeros([2, 3, 112, 112], dtype=torch.float)
@@ -82,18 +82,20 @@ def compare(model,th,newimgs,srcdir,dstdir,kndatas,crop):
                         try:theta = math.acos(cosine)
                         except  ValueError: theta=20
                         theta = theta * 180 / math.pi
-                        if theta<th: break
-                        if kndata==kndatas[-1]:
+                        if theta<th:
+                            if crop: 
+                                print('known')
+                            break
+                        if kndata==kndatas[-1]: #if unknown
                             img=Image.open(newpath)
-                            if crop:
+                            if crop: # new images send to unknown dir
                                 img_trim=img.crop((box[0]-35,box[1]-35,box[2]+70,box[3]+70))
                                 img_trim.save('{0}/{1}-{2}'.format(dstdir,i,newimg))
                                 data.append({'fullpath':'{0}/{1}-{2}'.format(dstdir,i,newimg),'identity':'unknown','img':imgs[0]})
-                            else:
+                            else: # learn the images(family or friends)
                                 img.save(dstdir+where+'/'+newimg)
                                 kndatas.append({'fullpath':dstdir+where+'/'+newimg,'identity':where,'img':imgs[0]})
-                                print('학습성공')
-    if not crop:
+    if not crop:#The learned image is reflected in the existing data.
         with open(knpkl,'wb') as f:
             pickle.dump(kndatas, f ,pickle.HIGHEST_PROTOCOL)
         remove_file(srcdir,newimgs)
