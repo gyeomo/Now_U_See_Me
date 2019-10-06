@@ -24,7 +24,6 @@ while True:
 	if (curTime - preTime) > 0.4: #0.4초마다 이미지를 저장
 		preTime = time.time()
 		print 'take'
-		
 		now = datetime.now()
 		current_time = str(now.hour)+"-"+str(now.minute)+"-"+\
 				str(now.second)+"-"+str(now.microsecond) #시-분-초-밀리초로 이름을 저장
