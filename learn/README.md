@@ -28,7 +28,7 @@ Learning process는 두 가지 일을 처리합니다.
 
 -client에게 얻은 외부인 결과를 통해 기존의 Data(family or friends)들에 포함 할 수 있도록 처리합니다.
 
-https://www.youtube.com/watch?v=Q-vJoNmon1c&feature=youtu.be
+[![video](../readme_image/video.png)](/https://www.youtube.com/watch?v=Q-vJoNmon1c&feature=youtu.be)
 
 **모델 성능용 demo 영상입니다.**
 
