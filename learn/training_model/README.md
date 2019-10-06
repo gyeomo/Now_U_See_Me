@@ -110,12 +110,15 @@ $ python train.py
 - 13233 faces
 - 5749 identities 
 - 1680 identities with >=2 photo														
-
-![1570305003072](/readme_image/accuaracy.png)
-<img src="/readme_image/accuaracy.png">
-<img src="/readme_image/Figure_1.png">
-![Figure_1](/readme_image/Figure_1.png)
-
+  
+![1570305003072](/readme_image/accuaracy.png)  
+  
+<img src="/readme_image/accuaracy.png">  
+  
+<img src="/readme_image/Figure_1.png">  
+  
+![Figure_1](/readme_image/Figure_1.png)  
+  
 #### 추가적인 정보
 
 - **나의 컴퓨터 사양**
